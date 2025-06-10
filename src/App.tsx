@@ -13,6 +13,8 @@ import {useRefreshToken} from "@/queries/query-task.ts";
 import History from "@/pages/History.tsx";
 import {GoogleSuccessAuth} from "@/pages/GoogleAuthPages.tsx";
 import ChangePasswordPage from "@/pages/ChangePasswordPage.tsx";
+import PrivacyPolicy from "@/pages/PrivacyPolicy.tsx";
+import TermsAndConditions from "@/pages/TermsAndConditions.tsx";
 
 
 function App() {
@@ -71,6 +73,20 @@ function App() {
               <GoogleSuccessAuth/>
             </PageAnimated>
           </AllowUnAuthenticated>
+        }/>
+        <Route path="/privacy-policy" element={
+          <>
+            <PageAnimated>
+              <PrivacyPolicy/>
+            </PageAnimated>
+          </>
+        }/>
+        <Route path="/terms-of-service" element={
+          <>
+            <PageAnimated>
+              <TermsAndConditions/>
+            </PageAnimated>
+          </>
         }/>
       </Routes>
       <Toaster/>
