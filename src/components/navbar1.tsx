@@ -59,7 +59,7 @@ interface Navbar1Props {
 const Navbar1 = ({
   logo = {
     url: "/#Hero3",
-    src: "https://shadcnblocks.com/images/block/logos/shadcnblockscom-icon.svg",
+    src: "/logo.svg",
     alt: "logo",
     title: "Story Dump",
   },
@@ -162,7 +162,7 @@ const Navbar1 = ({
                 <SheetHeader>
                   <SheetTitle>
                     <Link to={logo.url} className="flex items-center gap-2">
-                      <img src={logo.src} className="max-h-8" alt={logo.alt} />
+                      <BookTextIcon/>
                     </Link>
                   </SheetTitle>
                 </SheetHeader>
@@ -172,7 +172,14 @@ const Navbar1 = ({
                     collapsible
                     className="flex w-full flex-col gap-4"
                   >
-                    {menu.map((item) => renderMobileMenuItem(item))}
+                    {menu
+                      ?.filter(itm=>!itm.authentiation)
+                      .map((item) => renderMobileMenuItem(item))}
+                    {
+                      menu
+                        ?.filter(itm=>itm.authentiation&&is_authenticated)
+                        .map(item=>renderMobileMenuItem(item))
+                    }
                   </Accordion>
 
                   <div className="flex flex-col gap-3">

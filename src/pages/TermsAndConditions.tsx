@@ -8,8 +8,8 @@ const TermsAndConditions = () => {
 
       <p className="mb-4">
         By accessing or using Story Dumps (
-        <a href="https://storydumps.manideepanasuri.shop" className="text-blue-600 dark:text-blue-400 underline">
-          storydumps.manideepanasuri.shop
+        <a href="https://storydumps.xyz" className="text-blue-600 dark:text-blue-400 underline">
+          storydumps.xyz
         </a>), you agree to be bound by these terms.
       </p>
 

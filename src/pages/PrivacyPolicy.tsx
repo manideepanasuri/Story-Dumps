@@ -9,8 +9,8 @@ function PrivacyPolicy() {
 
       <p className="mb-4">
         <strong>Story Dumps</strong> operates the website
-        <a href="https://storydumps.manideepanasuri.shop" className="text-blue-600 dark:text-blue-400 underline ml-1">
-          storydumps.manideepanasuri.shop
+        <a href="https://storydumps.xyz" className="text-blue-600 dark:text-blue-400 underline ml-1">
+          storydumps.xyz
         </a>. This Privacy Policy outlines how we collect, use, and protect your information.
       </p>
 
