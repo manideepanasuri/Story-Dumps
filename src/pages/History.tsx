@@ -60,7 +60,7 @@ function History() {
           </span>
           </div>
             :
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4 ">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4 flex-1 w-full ">
               {successTasks.results.map((task) => (<SuccessTaskComponent key={task.id} task={task}/>))}
             </div>
         }
@@ -103,7 +103,7 @@ function History() {
           </span>
           </div>
           :
-          <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4">
+          <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4 flex-1 w-full">
             {pendingTasks.results.map((task) => (<PendingTaskComponent key={task.id} task={task}/>))}
           </div>
         }
@@ -136,7 +136,7 @@ function History() {
         </Pagination>
       </TabsContent>
       <TabsContent value="failure" className="h-full flex flex-col items-center justify-between">
-        {failTasks.results.length == 0 ? <div className="flex-1 flex items-center justify-center">
+        {failTasks.results.length == 0 ? <div className="flex-1 flex items-center justify-center w-full">
           <span className="flex items-center justify-center gap-2">
             <WindIcon size={40}/>
             <h2 className="scroll-m-20 text-center text-2xl font-extrabold tracking-tight text-nowrap inline">
@@ -145,7 +145,7 @@ function History() {
           </span>
           </div>
           :
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4 flex-1 w-full">
           {failTasks.results.map((task) => (<FailureTaskComponent key={task.id} task={task}/>))}
         </div>}
         <Pagination>

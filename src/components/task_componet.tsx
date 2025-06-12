@@ -109,12 +109,11 @@ export function PendingTaskComponent({task}:Props) {
   return (
     <div className="min-w-0">
       <TopAnimation>
-      <Card className=" mx-auto p-0 rounded-md col-span-1 min-w-0 bg-warning/20 text-warning-foreground">
+      <Card className=" mx-auto p-3 rounded-md col-span-1 min-w-0 bg-warning/20 text-warning-foreground">
         <CardContent className="p-0">
           <div className="aspect-square flex items-center justify-center">
             <span className="flex items-center justify-center flex-col">
               <Loader2Icon size={40} className="animate-spin py-2"/>
-              <p>{task.percentage} %</p>
             </span>
           </div>
           <hr className="text-xl"/>
@@ -140,9 +139,9 @@ export function FailureTaskComponent({task}:Props) {
     getPendingTasks(tokens.access,1).then().catch(err=>console.log(err))
   }
   return (
-    <div className="min-w-0">
+    <div className="min-w-0 w-full">
       <TopAnimation>
-      <Card className=" mx-auto p-0 rounded-md col-span-1 min-w-0 bg-destructive/20  text-destructive-foreground">
+      <Card className=" mx-auto p-3 rounded-md col-span-1 min-w-0 bg-destructive/20  text-destructive-foreground">
         <CardContent className="p-0">
           <div className="aspect-square flex justify-center items-center w-full">
             <span className="flex flex-col items-center justify-center">

@@ -42,5 +42,8 @@ export  const loginSchema = z.object({
 export const generateVideoSchema = z.object({
   title: z.string().min(3,"Name should be atleast 3 characters"),
   text: z.string().min(10,"Text should be atleast 10 characters"),
+  voice: z.string().min(1,"Please Select a voice"),
+  bg_video_url: z.string().min(1,"please select a video"),
+  speed:z.number().min(0.5,"minimum speed is 0.5").max(2,"maximum speed is 2"),
 })
 
