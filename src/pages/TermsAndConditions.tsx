@@ -1,7 +1,32 @@
+import {Helmet} from "react-helmet-async";
 
 const TermsAndConditions = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 ">
+    <>
+        <Helmet>
+          <title>Terms & Conditions | Story Dumps</title>
+          <meta
+            name="description"
+            content="These terms and conditions govern your use of Story Dumps. Please read them carefully before using our services."
+          />
+          <meta name="robots" content="index, follow" />
+          <meta property="og:title" content="Terms & Conditions | Story Dumps" />
+          <meta
+            property="og:description"
+            content="Read the full terms and conditions for using the Story Dumps platform."
+          />
+          <meta
+            property="og:url"
+            content="https://www.storydumps/terms"
+          />
+          <meta property="og:type" content="website" />
+          <link
+            rel="canonical"
+            href="https://www.storydumps/terms"
+          />
+        </Helmet>
+
+        <div className="max-w-4xl mx-auto px-4 py-8 ">
       <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
 
       <p className="mb-4">Effective Date: 10th June 2025</p>
@@ -48,6 +73,7 @@ const TermsAndConditions = () => {
       <h2 className="text-xl font-semibold mt-6 mb-2">9. Governing Law</h2>
       <p className="mb-4">These terms are governed by the laws of [Your Country/State].</p>
     </div>
+    </>
   );
 };
 
