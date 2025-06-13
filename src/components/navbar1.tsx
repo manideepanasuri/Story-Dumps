@@ -65,6 +65,7 @@ const Navbar1 = ({
   },
   menu = [
     { title: "Generate", url: "/home",authentiation: true },
+    {title: "History",url: "/History",authentiation: true },
     {
       title: "Features",
       url: "/#Feature17",
@@ -75,7 +76,11 @@ const Navbar1 = ({
       url: "/#FAQ's",
       authentiation: false,
     },
-    {title: "History",url: "/History",authentiation: true },
+    {
+      title: "About Us",
+      url: "/#about-us",
+      authentiation: false,
+    }
   ],
   auth = {
     login: { title: "Login", url: "/login" },

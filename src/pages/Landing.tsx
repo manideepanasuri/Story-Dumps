@@ -4,6 +4,7 @@ import {Feature17} from "@/components/feature17.tsx";
 import {Faq1} from "@/components/faq1.tsx";
 import {useLocation} from "react-router-dom";
 import {useEffect} from "react";
+import About from "@/components/About-componet.tsx";
 
 
 function Landing() {
@@ -28,6 +29,9 @@ function Landing() {
       </TopAnimation>
       <TopAnimation>
         <Faq1/>
+      </TopAnimation>
+      <TopAnimation>
+        <About/>
       </TopAnimation>
     </>
   );

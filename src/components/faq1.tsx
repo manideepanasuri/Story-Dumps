@@ -63,7 +63,7 @@ const Faq1 = ({
 
               }: Faq1Props) => {
   return (
-    <section className="py-32 " id="FAQ's">
+    <section className="py-12 px-3" id="FAQ's">
       <div className="container max-w-3xl mx-auto">
         <h1 className="mb-4 text-3xl font-semibold md:mb-11 md:text-4xl">
           {heading}
